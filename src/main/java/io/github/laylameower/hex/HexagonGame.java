@@ -11,8 +11,8 @@ public final class HexagonGame extends KiloEngineGame {
     }
 
     @Override
-    public void loadInitLevel() {
-        getLevelLoader().loadLevel("hexagon/hexagon.level.json5", getLevel());
+    public void loadInitScene() {
+        getSceneLoader().loadScene("/hexagon/hexagon.level.json5", getScene());
     }
 
     public static void main(String[] args) {

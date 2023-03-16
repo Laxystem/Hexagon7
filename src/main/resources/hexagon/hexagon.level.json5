@@ -1,0 +1,6 @@
+{
+  skybox: {
+    base: "/hexagon/skybox/",
+    all: "all.png"
+  }
+}

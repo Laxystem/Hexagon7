@@ -1,5 +1,3 @@
-val kiloEngineVersion = "0.1-SNAPSHOT"
-
 plugins {
     id("java")
 }
@@ -7,14 +5,14 @@ plugins {
 group = "io.github.laylameower"
 version = "0.0.1"
 
+val kiloEngineVersion = "0.1-SNAPSHOT"
+
 repositories {
     mavenCentral()
-    maven {
-        url = uri("https://maven.jemnetworks.com/releases")
-    }
-    maven {
-        url = uri("https://maven.jemnetworks.com/snapshots")
-    }
+    maven("https://maven.quiltmc.org/repository/release")
+    maven("https://maven.jemnetworks.com/releases")
+    maven("https://jitpack.io")
+    maven("https://maven.jemnetworks.com/snapshots")
 }
 
 dependencies {
